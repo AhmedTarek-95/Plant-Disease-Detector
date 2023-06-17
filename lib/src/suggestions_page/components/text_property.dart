@@ -22,7 +22,7 @@ class TextProperty extends StatelessWidget {
           title: Text(
             title,
             style: TextStyle(
-              color: kSecondary,
+              color: kWhite,
               fontFamily: 'SFBold',
               fontSize: (0.039 * height),
             ),
@@ -30,7 +30,7 @@ class TextProperty extends StatelessWidget {
           subtitle: Text(
             value,
             style: TextStyle(
-              color: kSecondary,
+              color: kWhite,
               fontFamily: 'SFRegular',
               fontSize: (0.026 * height),
             ),

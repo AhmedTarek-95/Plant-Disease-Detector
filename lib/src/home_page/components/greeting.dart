@@ -7,33 +7,6 @@ class GreetingSection extends SliverFixedExtentList {
           key: key,
           delegate: SliverChildBuilderDelegate(
             (BuildContext context, index) {
-              return Padding(
-                padding: EdgeInsets.fromLTRB((0.079*height), 0, (0.079*height), (0.079*height)),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: kSecondary,
-                    borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular((0.079*height)),
-                        bottomRight: Radius.circular((0.079*height))),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.fromLTRB((0.092*height), 0, 0, (0.099*height)),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Plant Disease Detector',
-                          style: TextStyle(
-                              fontFamily: 'SFBold',
-                              fontSize: (0.2*height),
-                              color: kWhite),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              );
             },
             childCount: 1,
           ),
